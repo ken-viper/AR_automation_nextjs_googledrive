@@ -1,10 +1,10 @@
 // import { useAuth } from "components/AuthProvider"
 // import { PageLinks } from "components/PageLinks"
 // import { UserStatus } from "components/UserStatus"
-// import logo from "../../public/logo.jpg"
-// import Image from "next/image"
+import logo from "../../public/logo.jpg"
+import Image from "next/image"
 // import { Button } from "antd"
-// import Link from "next/link"
+import Link from "next/link"
 // export default function Home() {
 //   const { user } = useAuth()
 
@@ -30,31 +30,39 @@
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await fetch('/api/google-drive');
-    //             const jsonData = await response.json();
-    //             setData(jsonData);
-    //         } catch (error) {
-    //             console.error('Error fetching data:', error);
-    //         }
-    //     };
-    //     fetchData();
-    // }, []);
+  // useEffect(() => {
+  //     const fetchData = async () => {
+  //         try {
+  //             const response = await fetch('/api/google-drive');
+  //             const jsonData = await response.json();
+  //             setData(jsonData);
+  //         } catch (error) {
+  //             console.error('Error fetching data:', error);
+  //         }
+  //     };
+  //     fetchData();
+  // }, []);
 
-    return (
-        <div className='flex justify-center items-center h-screen'>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">実行</button>
-            {/* <ul>
+  return (
+    <div>
+      <div className="flex justify-between">
+        <Image src={logo} alt="logo" className="my-2" />
+        <Link href="/signout" className="flex items-center pr-8 font-bold text-[20px]"  >Sign out</Link>
+      </div>
+      <div className='flex justify-center items-center h-screen'>
+
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">実行</button>
+        {/* <ul>
                 {data.map((item) => (
                     <li key={item.id}>{item.name}</li>
                 ))}
             </ul> */}
-        </div>
-    );
+      </div>
+    </div>
+
+  );
 };
 
 export default Home;
