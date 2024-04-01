@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Index</h1>
+      <h1 className="text-red-600">Index</h1>
       <UserStatus />
       <PageLinks />
     </div>

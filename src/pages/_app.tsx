@@ -1,3 +1,4 @@
+import "../styles/globals.css"
 import { AuthProvider } from "components/AuthProvider"
 import { NextPage } from "next"
 import { AppProps } from "next/app"
