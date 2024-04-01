@@ -1,7 +1,7 @@
 export type UserCB = (user: User, error: any) => void
 
-const userEmail = `admin@example.com`
-const userPassword = "admin123"
+const userEmail = `face-message.com`
+const userPassword = "zarusova123!@#"
 
 export type User = {
   email: string
@@ -50,7 +50,7 @@ export class Auth {
         this.user = {
           name: "Ivan",
           email,
-          token: "dfasdfadsf.asdfasdf.afsdfasd",
+          token: "facemessage.zarusova.takamatsu",
         }
 
         window.sessionStorage.setItem("user", JSON.stringify(this.user))
