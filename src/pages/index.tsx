@@ -3,28 +3,26 @@ import logo from "../../public/logo.jpg"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from 'react';
-import {getDayData} from "../utills/filedate"
 
 const Home = () => {
   const [data, setData] = useState({});
 
-  useEffect(() => {
+  // useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('/api/google-drive');
         const jsonData = await response.json();
-        const jsonFilesAndFolders = JSON.parse(jsonData);
-        setData(jsonFilesAndFolders);
+        setData(jsonData);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
-    fetchData();
-  }, [setData]); // Add setData as a dependency for useEffect
+    // fetchData();
+  // }, [setData]); // Add setData as a dependency for useEffect
 
   useEffect(() => {
-    console.log("result4",  data); // This will show the updated state
-    getDayData(data,"2024","04","01")
+    // console.log("result4",  data); // This will show the updated state
+    // getDayData(data,"2024","04","01")
   }, [data]); // Add data as a dependency for useEffect
 
 
@@ -36,7 +34,7 @@ const Home = () => {
       </div>
       <div className='flex justify-center items-center h-screen'>
 
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">実行</button>
+        <button onClick={fetchData} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">実行</button>
         {/* <ul>
           {data.map((item) => (
             <li key={item.id}>{item.name}</li>

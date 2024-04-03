@@ -47,7 +47,7 @@ export default function SignIn() {
         const user = await auth.signIn(email, pswd, 2000)
         if (user) {
           // Redirect to "/home" after successful sign-in
-          router.push("/protected");
+          // router.push("/protected");
         } else {
           // Handle invalid credentials
           console.log("Invalid email or password");
