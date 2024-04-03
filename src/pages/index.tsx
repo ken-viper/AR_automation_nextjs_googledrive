@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState("");
 
   // useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +21,7 @@ const Home = () => {
   // }, [setData]); // Add setData as a dependency for useEffect
 
   useEffect(() => {
-    // console.log("result4",  data); // This will show the updated state
+    console.log("hey",  data); // This will show the updated state
     // getDayData(data,"2024","04","01")
   }, [data]); // Add data as a dependency for useEffect
 
@@ -30,7 +30,7 @@ const Home = () => {
     <div>
       <div className="flex justify-between">
         <Image src={logo} alt="logo" className="my-2" />
-        <Link href="/signout" className="flex items-center pr-8 font-bold text-[20px]"  >Sign out</Link>
+        <Link href="/signout" className="flex items-center pr-8 font-bold text-[20px]">ログアウト</Link>
       </div>
       <div className='flex justify-center items-center h-screen'>
 
