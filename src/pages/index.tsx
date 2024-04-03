@@ -12,7 +12,8 @@ const Home = () => {
       try {
         const response = await fetch('/api/google-drive');
         const jsonData = await response.json();
-        setData(jsonData);
+        // setData(jsonData);
+        console.log("frontend",jsonData)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -20,10 +21,10 @@ const Home = () => {
     // fetchData();
   // }, [setData]); // Add setData as a dependency for useEffect
 
-  useEffect(() => {
-    console.log("hey",  data); // This will show the updated state
-    // getDayData(data,"2024","04","01")
-  }, [data]); // Add data as a dependency for useEffect
+  // useEffect(() => {
+  //   console.log("hey",  data); // This will show the updated state
+  //   // getDayData(data,"2024","04","01")
+  // }, [data]); // Add data as a dependency for useEffect
 
 
   return (

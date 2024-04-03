@@ -14,16 +14,16 @@ const drive = google.drive({ version: 'v3', auth });
 
 export async function listFilesAndFoldersInFolder(folderId) {
     const folderStructure = await buildFolderStructure(folderId, new Map());
-    const todayFolderstructure = await getFolderStructure(folderStructure, "2024", "04", "03")
-    console.log(todayFolderstructure)
-    convertImages(todayFolderstructure)
-        .then(() => {
-            console.log('Image conversion and storage completed successfully.');
-        })
-        .catch(error => {
-            console.error('An error occurred during image conversion and storage:', error);
-        });
-    // return todayFolderstructure; 
+    // const todayFolderstructure = await getFolderStructure(folderStructure, "2024", "04", "03")
+    // console.log(todayFolderstructure)
+    // convertImages(todayFolderstructure)
+    //     .then(() => {
+    //         console.log('Image conversion and storage completed successfully.');
+    //     })
+    //     .catch(error => {
+    //         console.error('An error occurred during image conversion and storage:', error);
+    //     });
+    return folderStructure; 
 
 }
 
