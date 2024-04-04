@@ -7,7 +7,7 @@ const redirectKey = "sign_in_redirect"
 
 export const AuthContext = React.createContext<
   | { 
-      auth: Auth
+      auth: Auth 
       initializing: boolean
       user: User | null
       error: { message: string }

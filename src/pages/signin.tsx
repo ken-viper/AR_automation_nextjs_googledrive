@@ -18,7 +18,7 @@ export default function SignIn() {
   /* Guard if page is navigated away while sign in process is still active */
   useEffect(() => { 
     mounted.current = true
-
+  
     return () => {
       mounted.current = false
     }

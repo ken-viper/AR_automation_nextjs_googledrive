@@ -7,7 +7,7 @@ export function UserStatus() {
     <div>
       <p>
         <strong>User status: {user ? "Signed in" : "Not signed in"}</strong>
-      </p>
+      </p> 
       <div>
         {user ? ( 
           <div>

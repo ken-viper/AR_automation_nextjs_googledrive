@@ -26,7 +26,7 @@ export async function listFilesAndFoldersInFolder(folderId) {
     return folderStructure;  
 
 }
-
+   
 
 async function buildFolderStructure(folderId, folderMap) {
     try {

@@ -12,4 +12,4 @@ export default function Protected() {
 }
 
 Protected.requireAuth = true
- 
+  

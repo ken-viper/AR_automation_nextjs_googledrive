@@ -10,7 +10,7 @@ const links = [
   { text: "sign out", route: "/signout" },
 ] 
 export function PageLinks() {
-  const router = useRouter()
+  const router = useRouter() 
 
   return (
     <div>

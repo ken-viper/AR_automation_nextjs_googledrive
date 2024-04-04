@@ -14,7 +14,7 @@ export function AuthGuard({ children }: { children: JSX.Element }) {
         setRedirect(router.route)
         router.push("/signin")
       } 
-    }
+    } 
   }, [initializing, router, user, setRedirect])
 
   /* show loading indicator while the auth provider is still initializing */

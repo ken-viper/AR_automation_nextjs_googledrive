@@ -10,7 +10,7 @@ export type NextApplicationPage<P = any, IP = P> = NextPage<P, IP> & {
   requireAuth?: boolean
 }
 
-export default function MyApp(props: AppProps) {
+export default function MyApp(props: AppProps) { 
   const {
     Component,
     pageProps, 
