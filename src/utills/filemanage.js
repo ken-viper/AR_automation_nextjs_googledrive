@@ -23,7 +23,7 @@ export async function listFilesAndFoldersInFolder(folderId) {
     //     .catch(error => {
     //         console.error('An error occurred during image conversion and storage:', error);
     //     });
-    return folderStructure; 
+    return folderStructure;  
 
 }
 

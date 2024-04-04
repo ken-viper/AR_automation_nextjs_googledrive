@@ -6,7 +6,7 @@ const auth = new Auth() // singleton
 const redirectKey = "sign_in_redirect"
 
 export const AuthContext = React.createContext<
-  | {
+  | { 
       auth: Auth
       initializing: boolean
       user: User | null

@@ -44,7 +44,7 @@ export class Auth {
         this.onUserChange(null, this.error)
 
         return
-      }
+      } 
 
       setTimeout(() => {
         this.user = {

@@ -13,7 +13,7 @@ export function AuthGuard({ children }: { children: JSX.Element }) {
         // remember the page that user tried to access
         setRedirect(router.route)
         router.push("/signin")
-      }
+      } 
     }
   }, [initializing, router, user, setRedirect])
 

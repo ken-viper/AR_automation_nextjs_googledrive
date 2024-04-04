@@ -13,7 +13,7 @@ const Home = () => {
         const response = await fetch('/api/google-drive');
         const jsonData = await response.json();
         // setData(jsonData);
-        console.log("frontend",jsonData)
+        console.log("frontend",jsonData) 
       } catch (error) {
         console.error('Error fetching data:', error);
       }

@@ -8,7 +8,7 @@ const links = [
   { text: "protected two", route: "/protected-two" },
   { text: "sign in", route: "/signin" },
   { text: "sign out", route: "/signout" },
-]
+] 
 export function PageLinks() {
   const router = useRouter()
 

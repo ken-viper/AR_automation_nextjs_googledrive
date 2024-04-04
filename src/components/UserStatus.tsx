@@ -9,7 +9,7 @@ export function UserStatus() {
         <strong>User status: {user ? "Signed in" : "Not signed in"}</strong>
       </p>
       <div>
-        {user ? (
+        {user ? ( 
           <div>
             <p>name: {user.name}</p>
             <p>email: {user.email}</p>

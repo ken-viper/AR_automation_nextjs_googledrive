@@ -13,7 +13,7 @@ export type NextApplicationPage<P = any, IP = P> = NextPage<P, IP> & {
 export default function MyApp(props: AppProps) {
   const {
     Component,
-    pageProps,
+    pageProps, 
   }: { Component: NextApplicationPage; pageProps: any } = props
 
   return (

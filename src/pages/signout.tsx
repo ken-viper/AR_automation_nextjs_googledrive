@@ -15,5 +15,5 @@ export default function SignOut() {
       <h1 className=" block">Sign Outed</h1>
       <Link href="/" className="text-8xl font-bold text-blue-500 hover:text-yellow-500 transition duration-500 ease-in-out">Back</Link>
     </div>
-  )
+  ) 
 }

@@ -16,7 +16,7 @@ export default function SignIn() {
   const router = useRouter()
 
   /* Guard if page is navigated away while sign in process is still active */
-  useEffect(() => {
+  useEffect(() => { 
     mounted.current = true
 
     return () => {
