@@ -9,7 +9,7 @@ const Home = () => {
 
   // useEffect(() => {
     const fetchData = async () => {
-      try {
+      try { 
         const response = await fetch('/api/google-drive');
         const jsonData = await response.json();
         // setData(jsonData); 
